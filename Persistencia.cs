@@ -31,39 +31,45 @@ namespace desafio_atos
 
         public static void lerArquivoEntrada(List<Veiculo> lista)
         {
-            StreamReader leitor = new StreamReader("veiculosEntrada.dat");
-            string linha; 
-            string[] vetorDados; 
-
-            do
+            if(File.Exists("veiculosEntrada.dat"))
             {
-                linha = leitor.ReadLine();
-                if(!string.IsNullOrEmpty(linha))
+                StreamReader leitor = new StreamReader("veiculosEntrada.dat");
+                string linha;
+                string[] vetorDados;
+
+                do
                 {
-                    vetorDados = linha.Split(';');
-                    lista.Add(new Veiculo(vetorDados[0], vetorDados[1], vetorDados[2]));
-                }                
-            } while (!leitor.EndOfStream);
-            leitor.Close();
+                    linha = leitor.ReadLine();
+                    if (!string.IsNullOrEmpty(linha))
+                    {
+                        vetorDados = linha.Split(';');
+                        lista.Add(new Veiculo(vetorDados[0], vetorDados[1], vetorDados[2]));
+                    }
+                } while (!leitor.EndOfStream);
+                leitor.Close();
+            }
         }
 
         public static void lerArquivoSaida(List<Veiculo> lista)
         {
-            StreamReader leitor = new StreamReader("veiculosSaida.dat");
-            string linha; 
-            string[] vetorDados; 
-
-            do
+            if(File.Exists("veiculosSaida.dat"))
             {
-                linha = leitor.ReadLine();
-                if(!string.IsNullOrEmpty(linha))
+                StreamReader leitor = new StreamReader("veiculosSaida.dat");
+                string linha;
+                string[] vetorDados;
+
+                do
                 {
-                    vetorDados = linha.Split(';');
-                    lista.Add(new Veiculo(vetorDados[0], vetorDados[1], vetorDados[2],
-                        vetorDados[3], vetorDados[4], int.Parse(vetorDados[5]), double.Parse(vetorDados[6])));
-                }
-            } while (!leitor.EndOfStream);
-            leitor.Close();
+                    linha = leitor.ReadLine();
+                    if (!string.IsNullOrEmpty(linha))
+                    {
+                        vetorDados = linha.Split(';');
+                        lista.Add(new Veiculo(vetorDados[0], vetorDados[1], vetorDados[2],
+                            vetorDados[3], vetorDados[4], int.Parse(vetorDados[5]), double.Parse(vetorDados[6])));
+                    }
+                } while (!leitor.EndOfStream);
+                leitor.Close();
+            }
         }
     }
 }

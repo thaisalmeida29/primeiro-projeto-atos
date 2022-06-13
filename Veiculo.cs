@@ -81,6 +81,7 @@ namespace desafio_atos
             this.TempoPermanencia = saida - entrada;
             var timeSpanFromMinutes = TimeSpan.FromMinutes(this.TempoPermanencia);
             int tempoPermanenciaEmHoras = timeSpanFromMinutes.Hours;
+
             if(tempoPermanenciaEmHoras == 0)
             {
                 tempoPermanenciaEmHoras = 1;
