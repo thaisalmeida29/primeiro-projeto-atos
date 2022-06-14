@@ -41,5 +41,26 @@ namespace desafio_atos
                 Persistencia.gravarNoArquivoEntrada(listaEntrada);
             }
         }
+
+        private void timerHoraSaida_Tick(object sender, EventArgs e)
+        {
+            lbHoraSaida.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        private void lbDataSaida_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmSaidaUsuario_Load(object sender, EventArgs e)
+        {
+            lbDataSaida.Text = DateTime.Now.ToString("dd/MM/yyyy");
+        }
+
+        private void btirListaCarros_Click(object sender, EventArgs e)
+        {
+            FrmListaCarros verifica = new FrmListaCarros();
+            verifica.ShowDialog();
+        }
     }
 }

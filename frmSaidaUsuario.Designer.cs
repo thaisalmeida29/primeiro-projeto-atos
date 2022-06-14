@@ -28,28 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSaidaUsuario));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btSalvarSaida = new System.Windows.Forms.Button();
-            this.btVoltarSaida = new System.Windows.Forms.Button();
+            this.btirListaCarros = new System.Windows.Forms.Button();
             this.btLimparSaida = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbDataSaida = new System.Windows.Forms.Label();
+            this.lbHoraSaida = new System.Windows.Forms.Label();
+            this.timerHoraSaida = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(178, 66);
+            this.textBox1.BackColor = System.Drawing.Color.LightCoral;
+            this.textBox1.Location = new System.Drawing.Point(163, 121);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(115, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBox1.Size = new System.Drawing.Size(132, 20);
+            this.textBox1.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 58);
+            this.label1.Location = new System.Drawing.Point(12, 121);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 28);
             this.label1.TabIndex = 3;
@@ -86,17 +95,18 @@
             this.btSalvarSaida.UseVisualStyleBackColor = false;
             this.btSalvarSaida.Click += new System.EventHandler(this.btSalvarSaida_Click);
             // 
-            // btVoltarSaida
+            // btirListaCarros
             // 
-            this.btVoltarSaida.BackColor = System.Drawing.Color.Violet;
-            this.btVoltarSaida.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btVoltarSaida.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btVoltarSaida.Location = new System.Drawing.Point(557, 432);
-            this.btVoltarSaida.Name = "btVoltarSaida";
-            this.btVoltarSaida.Size = new System.Drawing.Size(149, 68);
-            this.btVoltarSaida.TabIndex = 11;
-            this.btVoltarSaida.Text = "Voltar";
-            this.btVoltarSaida.UseVisualStyleBackColor = false;
+            this.btirListaCarros.BackColor = System.Drawing.Color.Violet;
+            this.btirListaCarros.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btirListaCarros.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btirListaCarros.Location = new System.Drawing.Point(557, 432);
+            this.btirListaCarros.Name = "btirListaCarros";
+            this.btirListaCarros.Size = new System.Drawing.Size(149, 68);
+            this.btirListaCarros.TabIndex = 11;
+            this.btirListaCarros.Text = "Ir para a lista de carros";
+            this.btirListaCarros.UseVisualStyleBackColor = false;
+            this.btirListaCarros.Click += new System.EventHandler(this.btirListaCarros_Click);
             // 
             // btLimparSaida
             // 
@@ -111,6 +121,73 @@
             this.btLimparSaida.UseVisualStyleBackColor = false;
             this.btLimparSaida.Click += new System.EventHandler(this.btLimparSaida_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(509, 149);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(129, 56);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Valor por hora\r\n R$5,00";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(509, 246);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(234, 56);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Horário de funcionamento:\r\n7:00 ás 20:00";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 191);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 28);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Data:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 274);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 28);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Hora:";
+            // 
+            // lbDataSaida
+            // 
+            this.lbDataSaida.AutoSize = true;
+            this.lbDataSaida.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDataSaida.Location = new System.Drawing.Point(101, 198);
+            this.lbDataSaida.Name = "lbDataSaida";
+            this.lbDataSaida.Size = new System.Drawing.Size(46, 21);
+            this.lbDataSaida.TabIndex = 22;
+            this.lbDataSaida.Text = "Data";
+            this.lbDataSaida.Click += new System.EventHandler(this.lbDataSaida_Click);
+            // 
+            // lbHoraSaida
+            // 
+            this.lbHoraSaida.AutoSize = true;
+            this.lbHoraSaida.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHoraSaida.Location = new System.Drawing.Point(101, 281);
+            this.lbHoraSaida.Name = "lbHoraSaida";
+            this.lbHoraSaida.Size = new System.Drawing.Size(47, 21);
+            this.lbHoraSaida.TabIndex = 23;
+            this.lbHoraSaida.Text = "Hora";
+            // 
+            // timerHoraSaida
+            // 
+            this.timerHoraSaida.Enabled = true;
+            this.timerHoraSaida.Interval = 1;
+            this.timerHoraSaida.Tick += new System.EventHandler(this.timerHoraSaida_Tick);
+            // 
             // frmSaidaUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,8 +195,14 @@
             this.BackColor = System.Drawing.Color.DarkOrchid;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(771, 512);
+            this.Controls.Add(this.lbHoraSaida);
+            this.Controls.Add(this.lbDataSaida);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btLimparSaida);
-            this.Controls.Add(this.btVoltarSaida);
+            this.Controls.Add(this.btirListaCarros);
             this.Controls.Add(this.btSalvarSaida);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -129,6 +212,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmSaidaUsuario";
             this.Text = "frmSaidaUsuario";
+            this.Load += new System.EventHandler(this.frmSaidaUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,7 +225,14 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btSalvarSaida;
-        private System.Windows.Forms.Button btVoltarSaida;
+        private System.Windows.Forms.Button btirListaCarros;
         private System.Windows.Forms.Button btLimparSaida;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbDataSaida;
+        private System.Windows.Forms.Label lbHoraSaida;
+        private System.Windows.Forms.Timer timerHoraSaida;
     }
 }

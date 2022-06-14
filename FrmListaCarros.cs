@@ -45,5 +45,22 @@ namespace desafio_atos
         {
 
         }
+
+        private void tbListaEntrada_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonFecharLista_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btApagarListaEntrada_Click(object sender, EventArgs e)
+        {
+            List<Veiculo> listaEntrada = new List<Veiculo>();
+            listaEntrada = new List<Veiculo>();
+            Console.WriteLine(listaEntrada.Count);
+        }
     }
 }

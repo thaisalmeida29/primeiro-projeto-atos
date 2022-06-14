@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Windows.Forms;
 
 namespace desafio_atos
 {
@@ -15,6 +16,7 @@ namespace desafio_atos
                 escritor.Flush();
             }
             escritor.Close();
+            MessageBox.Show("Veiculo cadastrado com sucesso!");
         }
 
         public static void gravarNoArquivoSaida(List<Veiculo> lista)
@@ -27,6 +29,9 @@ namespace desafio_atos
                 escritor.Flush();
             }
             escritor.Close();
+            MessageBox.Show("O veiculo saiu da garagem.\n Volte sempre! ");
+            
+
         }
 
         public static void lerArquivoEntrada(List<Veiculo> lista)
