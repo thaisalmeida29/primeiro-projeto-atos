@@ -47,6 +47,7 @@ namespace desafio_atos
             var veiculo = new Veiculo(tbPlacaEntrada.Text, dataCorrente.ToString("dd/MM/yyyy"), dataCorrente.ToString("HH:mm"));
             listaEntrada.Add(veiculo);
             Persistencia.gravarNoArquivoEntrada(listaEntrada);
+            MessageBox.Show("Veiculo cadastrado com sucesso!");
         }
 
         private void buttonLimparEntrada_Click(object sender, EventArgs e)

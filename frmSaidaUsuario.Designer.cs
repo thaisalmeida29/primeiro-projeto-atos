@@ -49,9 +49,10 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.LightCoral;
+            this.textBox1.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(163, 121);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 20);
+            this.textBox1.Size = new System.Drawing.Size(132, 31);
             this.textBox1.TabIndex = 3;
             // 
             // label1
@@ -91,7 +92,7 @@
             this.btSalvarSaida.Name = "btSalvarSaida";
             this.btSalvarSaida.Size = new System.Drawing.Size(149, 68);
             this.btSalvarSaida.TabIndex = 10;
-            this.btSalvarSaida.Text = "Salvar\r\n";
+            this.btSalvarSaida.Text = "Sair";
             this.btSalvarSaida.UseVisualStyleBackColor = false;
             this.btSalvarSaida.Click += new System.EventHandler(this.btSalvarSaida_Click);
             // 

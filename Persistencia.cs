@@ -16,7 +16,7 @@ namespace desafio_atos
                 escritor.Flush();
             }
             escritor.Close();
-            MessageBox.Show("Veiculo cadastrado com sucesso!");
+           
         }
 
         public static void gravarNoArquivoSaida(List<Veiculo> lista)
@@ -29,9 +29,6 @@ namespace desafio_atos
                 escritor.Flush();
             }
             escritor.Close();
-            MessageBox.Show("O veiculo saiu da garagem.\n Volte sempre! ");
-            
-
         }
 
         public static void lerArquivoEntrada(List<Veiculo> lista)
@@ -53,8 +50,7 @@ namespace desafio_atos
                 } while (!leitor.EndOfStream);
                 leitor.Close();
             }
-        }
-
+        } 
         public static void lerArquivoSaida(List<Veiculo> lista)
         {
             if(File.Exists("veiculosSaida.dat"))
