@@ -16,7 +16,7 @@ namespace desafio_atos
                 escritor.Flush();
             }
             escritor.Close();
-           
+
         }
 
         public static void gravarNoArquivoSaida(List<Veiculo> lista)
@@ -33,7 +33,7 @@ namespace desafio_atos
 
         public static void lerArquivoEntrada(List<Veiculo> lista)
         {
-            if(File.Exists("veiculosEntrada.dat"))
+            if (File.Exists("veiculosEntrada.dat"))
             {
                 StreamReader leitor = new StreamReader("veiculosEntrada.dat");
                 string linha;
@@ -50,10 +50,10 @@ namespace desafio_atos
                 } while (!leitor.EndOfStream);
                 leitor.Close();
             }
-        } 
+        }
         public static void lerArquivoSaida(List<Veiculo> lista)
         {
-            if(File.Exists("veiculosSaida.dat"))
+            if (File.Exists("veiculosSaida.dat"))
             {
                 StreamReader leitor = new StreamReader("veiculosSaida.dat");
                 string linha;

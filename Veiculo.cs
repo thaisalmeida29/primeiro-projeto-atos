@@ -20,8 +20,8 @@ namespace desafio_atos
         /// construtor é utilizado na leitura do arquivo para popular a lista
         /// </summary>
         /// <param name="placa">identificação do veiculo</param>
-       
-  
+
+
         public Veiculo(string placa, string dataEntrada, string horaEntrada)
         {
             this.Placa = placa;
@@ -37,8 +37,6 @@ namespace desafio_atos
             this.valorCobrado = valorCobrado;
         }
 
-
-
         /// <summary>
         /// metodo que gera a data e hora para entrada
         /// ou saida de veiculo
@@ -47,16 +45,16 @@ namespace desafio_atos
         public void gerarDataHora(string tipo)
         {
             DateTime dateTime = DateTime.Now;
-            string[] vetorDados = dateTime.ToString().Split(' ');  
+            string[] vetorDados = dateTime.ToString().Split(' ');
             switch (tipo)
             {
                 case "entrada":
-                  this.DataEntrada = vetorDados[0];
-                   this.HoraEntrada = vetorDados[1];
+                    this.DataEntrada = vetorDados[0];
+                    this.HoraEntrada = vetorDados[1];
                     break;
                 case "saida":
-                   this.DataSaida = vetorDados[0];
-                   this.HoraSaida = vetorDados[1];
+                    this.DataSaida = vetorDados[0];
+                    this.HoraSaida = vetorDados[1];
                     break;
                 default:
                     break;
@@ -66,11 +64,10 @@ namespace desafio_atos
         public void realizarCobranca(double valorHora)
         {
             // descobrindo tempo de entrada
-            string[] vetorDados = horaEntrada.Split(':'); 
+            string[] vetorDados = horaEntrada.Split(':');
             int hora = int.Parse(vetorDados[0]);
             int minutos = int.Parse(vetorDados[1]);
             int entrada = hora * 60 + minutos;
-
 
             // descobrindo tempo de saida
             vetorDados = horaSaida.Split(':');
@@ -82,7 +79,7 @@ namespace desafio_atos
             var timeSpanFromMinutes = TimeSpan.FromMinutes(this.TempoPermanencia);
             int tempoPermanenciaEmHoras = timeSpanFromMinutes.Hours;
 
-            if(tempoPermanenciaEmHoras == 0)
+            if (tempoPermanenciaEmHoras == 0)
             {
                 tempoPermanenciaEmHoras = 1;
             }
@@ -98,10 +95,9 @@ namespace desafio_atos
         public int TempoPermanencia { get => tempoPermanencia; set => tempoPermanencia = value; }
         public double ValorCobrado { get => valorCobrado; set => valorCobrado = value; }
 
-
         public static int localizado(string placa, List<Veiculo> lista)
         {
-            foreach(Veiculo i in lista)
+            foreach (Veiculo i in lista)
             {
                 if (i.Placa.Equals(placa))
                 {
@@ -111,11 +107,5 @@ namespace desafio_atos
             return -27; //codigo do esc, ou seja, veiculo não localizado
         }
 
-        public static bool temLugar(List<Veiculo> lista, int tamanhoGaragem)
-        {
-            return lista.Count < tamanhoGaragem;
-        }
-
-        
     }
 }

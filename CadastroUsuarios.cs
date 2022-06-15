@@ -32,12 +32,19 @@ namespace desafio_atos
         private void buttonCadatrarEntrada_Click(object sender, EventArgs e)
         {
             Persistencia.lerArquivoEntrada(listaEntrada);
+            if (listaEntrada.Count >= 50)
+            {
+                MessageBox.Show("Garagem lotada.");
+                return;
+            }
+
             if (tbPlacaEntrada.Text.Length != 7)
             {
                 MessageBox.Show("Por favor, informar a placa com 7 caracteres." +
                     "\nSomente letras e números");
                 return;
             }
+
             if (Veiculo.localizado(tbPlacaEntrada.Text, listaEntrada) != -27)
             {
                 MessageBox.Show("Veiculo já está na Garagem.\nPlaca repetida.", "Erro de digitação");
@@ -48,6 +55,7 @@ namespace desafio_atos
             listaEntrada.Add(veiculo);
             Persistencia.gravarNoArquivoEntrada(listaEntrada);
             MessageBox.Show("Veiculo cadastrado com sucesso!");
+            tbPlacaEntrada.Clear();
         }
 
         private void buttonLimparEntrada_Click(object sender, EventArgs e)
@@ -62,7 +70,7 @@ namespace desafio_atos
 
         private void lbDataEntrada_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

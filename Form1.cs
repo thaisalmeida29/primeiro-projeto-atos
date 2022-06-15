@@ -36,26 +36,27 @@ namespace desafio_atos
                 frmAtivo.Close();
             }
         }
-        
+
         private void ActiveButton(Button frmAtivo)
         {
             foreach (Control ctrl in panelPrincipal.Controls)
             {
                 ctrl.ForeColor = Color.White;
             }
-               
+
         }
 
         List<Veiculo> listaEntrada = new List<Veiculo>();
         List<Veiculo> listaSaida = new List<Veiculo>();
         private void label1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             lbData.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            
         }
 
         private void lbData_Click(object sender, EventArgs e)

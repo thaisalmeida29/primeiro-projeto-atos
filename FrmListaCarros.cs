@@ -60,13 +60,14 @@ namespace desafio_atos
         {
             List<Veiculo> listaEntradaVazia = new List<Veiculo>();
             Persistencia.gravarNoArquivoEntrada(listaEntradaVazia);
+            listBoxListaEntrada.Items.Clear();
         }
 
         private void btApagarListaSaida_Click(object sender, EventArgs e)
         {
             List<Veiculo> listaVaziaSaida = new List<Veiculo>();
             Persistencia.gravarNoArquivoSaida(listaVaziaSaida);
-         
+            listBoxListaSaida.Items.Clear();
         }
     }
 }
