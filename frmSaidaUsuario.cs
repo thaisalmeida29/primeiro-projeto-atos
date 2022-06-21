@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using desafio_atos;
+
 namespace desafio_atos
 {
     public partial class frmSaidaUsuario : Form

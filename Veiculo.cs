@@ -19,7 +19,9 @@ namespace desafio_atos
         /// <summary>
         /// construtor é utilizado na leitura do arquivo para popular a lista
         /// </summary>
-        /// <param name="placa">identificação do veiculo</param>
+        /// <param name="placa"></param>
+        /// <param name="dataEntrada"></param>
+        /// <param name="horaEntrada"></param>
 
 
         public Veiculo(string placa, string dataEntrada, string horaEntrada)
@@ -60,7 +62,10 @@ namespace desafio_atos
                     break;
             }
         }
-
+        /// <summary>
+        /// método que realiza a cobrança do usuário
+        /// </summary>
+        /// <param name="valorHora"></param>
         public void realizarCobranca(double valorHora)
         {
             // descobrindo tempo de entrada
@@ -95,6 +100,12 @@ namespace desafio_atos
         public int TempoPermanencia { get => tempoPermanencia; set => tempoPermanencia = value; }
         public double ValorCobrado { get => valorCobrado; set => valorCobrado = value; }
 
+        /// <summary>
+        /// método que verifica se o veiculo já está na lista
+        /// </summary>
+        /// <param name="placa"></param>
+        /// <param name="lista"></param>
+        /// <returns></returns>
         public static int localizado(string placa, List<Veiculo> lista)
         {
             foreach (Veiculo i in lista)

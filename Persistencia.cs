@@ -6,6 +6,10 @@ namespace desafio_atos
 {
     internal class Persistencia
     {
+        /// <summary>
+        /// grava a lista no arquivo de entrada
+        /// </summary>
+        /// <param name="lista"></param>
         public static void gravarNoArquivoEntrada(List<Veiculo> lista)
         {
             StreamWriter escritor = new StreamWriter("veiculosEntrada.dat");
@@ -18,6 +22,10 @@ namespace desafio_atos
             escritor.Close();
 
         }
+        /// <summary>
+        /// grava a lista no arquivo de saida
+        /// </summary>
+        /// <param name="lista"></param>
 
         public static void gravarNoArquivoSaida(List<Veiculo> lista)
         {
@@ -30,7 +38,10 @@ namespace desafio_atos
             }
             escritor.Close();
         }
-
+        /// <summary>
+        /// ler o arquivo de entrada
+        /// </summary>
+        /// <param name="lista"></param>
         public static void lerArquivoEntrada(List<Veiculo> lista)
         {
             if (File.Exists("veiculosEntrada.dat"))
@@ -51,6 +62,10 @@ namespace desafio_atos
                 leitor.Close();
             }
         }
+        /// <summary>
+        /// ler arquivo de saida
+        /// </summary>
+        /// <param name="lista"></param>
         public static void lerArquivoSaida(List<Veiculo> lista)
         {
             if (File.Exists("veiculosSaida.dat"))

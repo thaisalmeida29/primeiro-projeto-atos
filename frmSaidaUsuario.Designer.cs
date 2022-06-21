@@ -48,7 +48,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.LightCoral;
+            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBox1.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(163, 121);
             this.textBox1.Name = "textBox1";
@@ -58,20 +58,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 121);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 28);
+            this.label1.Size = new System.Drawing.Size(149, 30);
             this.label1.TabIndex = 3;
             this.label1.Text = "Placa do veiculo:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Sitka Display", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(213, -1);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(303, 30);
+            this.label4.Size = new System.Drawing.Size(323, 35);
             this.label4.TabIndex = 6;
             this.label4.Text = "Cadastro de saída de automóveis";
             // 
@@ -85,21 +85,21 @@
             // 
             // btSalvarSaida
             // 
-            this.btSalvarSaida.BackColor = System.Drawing.Color.Violet;
-            this.btSalvarSaida.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSalvarSaida.BackColor = System.Drawing.Color.Moccasin;
+            this.btSalvarSaida.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSalvarSaida.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btSalvarSaida.Location = new System.Drawing.Point(27, 432);
             this.btSalvarSaida.Name = "btSalvarSaida";
             this.btSalvarSaida.Size = new System.Drawing.Size(149, 68);
             this.btSalvarSaida.TabIndex = 10;
-            this.btSalvarSaida.Text = "Sair";
+            this.btSalvarSaida.Text = "Saída";
             this.btSalvarSaida.UseVisualStyleBackColor = false;
             this.btSalvarSaida.Click += new System.EventHandler(this.btSalvarSaida_Click);
             // 
             // btirListaCarros
             // 
-            this.btirListaCarros.BackColor = System.Drawing.Color.Violet;
-            this.btirListaCarros.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btirListaCarros.BackColor = System.Drawing.Color.Moccasin;
+            this.btirListaCarros.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btirListaCarros.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btirListaCarros.Location = new System.Drawing.Point(557, 432);
             this.btirListaCarros.Name = "btirListaCarros";
@@ -111,8 +111,8 @@
             // 
             // btLimparSaida
             // 
-            this.btLimparSaida.BackColor = System.Drawing.Color.Violet;
-            this.btLimparSaida.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLimparSaida.BackColor = System.Drawing.Color.Moccasin;
+            this.btLimparSaida.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLimparSaida.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btLimparSaida.Location = new System.Drawing.Point(292, 432);
             this.btLimparSaida.Name = "btLimparSaida";
@@ -125,40 +125,40 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(509, 149);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(129, 56);
+            this.label6.Size = new System.Drawing.Size(133, 60);
             this.label6.TabIndex = 18;
             this.label6.Text = "Valor por hora\r\n R$5,00";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(509, 246);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(234, 56);
+            this.label7.Size = new System.Drawing.Size(236, 60);
             this.label7.TabIndex = 19;
             this.label7.Text = "Horário de funcionamento:\r\n7:00 ás 20:00";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(12, 191);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 28);
+            this.label3.Size = new System.Drawing.Size(56, 30);
             this.label3.TabIndex = 20;
             this.label3.Text = "Data:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 274);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 28);
+            this.label2.Size = new System.Drawing.Size(60, 30);
             this.label2.TabIndex = 21;
             this.label2.Text = "Hora:";
             // 
@@ -193,7 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkOrchid;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(771, 512);
             this.Controls.Add(this.lbHoraSaida);

@@ -43,30 +43,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(50, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 28);
+            this.label1.Size = new System.Drawing.Size(165, 28);
             this.label1.TabIndex = 3;
             this.label1.Text = " Entrada de veiculos";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(538, 87);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 28);
+            this.label2.Size = new System.Drawing.Size(141, 28);
             this.label2.TabIndex = 4;
             this.label2.Text = "Saída de veiculos";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Sitka Display", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(222, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(271, 28);
+            this.label3.Size = new System.Drawing.Size(320, 35);
             this.label3.TabIndex = 5;
             this.label3.Text = "Lista de veiculos da Garageplace";
             // 
@@ -80,9 +80,9 @@
             // 
             // buttonFecharLista
             // 
-            this.buttonFecharLista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonFecharLista.BackColor = System.Drawing.Color.Moccasin;
             this.buttonFecharLista.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonFecharLista.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonFecharLista.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonFecharLista.ForeColor = System.Drawing.Color.Black;
             this.buttonFecharLista.Location = new System.Drawing.Point(12, 12);
             this.buttonFecharLista.Name = "buttonFecharLista";
@@ -94,12 +94,12 @@
             // 
             // btApagarListaEntrada
             // 
-            this.btApagarListaEntrada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btApagarListaEntrada.BackColor = System.Drawing.Color.Moccasin;
             this.btApagarListaEntrada.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btApagarListaEntrada.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btApagarListaEntrada.Location = new System.Drawing.Point(303, 427);
+            this.btApagarListaEntrada.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btApagarListaEntrada.Location = new System.Drawing.Point(294, 427);
             this.btApagarListaEntrada.Name = "btApagarListaEntrada";
-            this.btApagarListaEntrada.Size = new System.Drawing.Size(158, 73);
+            this.btApagarListaEntrada.Size = new System.Drawing.Size(175, 73);
             this.btApagarListaEntrada.TabIndex = 15;
             this.btApagarListaEntrada.Text = "Apagar lista entrada";
             this.btApagarListaEntrada.UseVisualStyleBackColor = false;
@@ -107,12 +107,12 @@
             // 
             // btApagarListaSaida
             // 
-            this.btApagarListaSaida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btApagarListaSaida.BackColor = System.Drawing.Color.Moccasin;
             this.btApagarListaSaida.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btApagarListaSaida.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btApagarListaSaida.Location = new System.Drawing.Point(303, 326);
+            this.btApagarListaSaida.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btApagarListaSaida.Location = new System.Drawing.Point(294, 326);
             this.btApagarListaSaida.Name = "btApagarListaSaida";
-            this.btApagarListaSaida.Size = new System.Drawing.Size(158, 75);
+            this.btApagarListaSaida.Size = new System.Drawing.Size(175, 75);
             this.btApagarListaSaida.TabIndex = 16;
             this.btApagarListaSaida.Text = "Apagar lista saída";
             this.btApagarListaSaida.UseVisualStyleBackColor = false;
@@ -120,7 +120,7 @@
             // 
             // listBoxListaEntrada
             // 
-            this.listBoxListaEntrada.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.listBoxListaEntrada.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.listBoxListaEntrada.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxListaEntrada.FormattingEnabled = true;
             this.listBoxListaEntrada.ItemHeight = 21;
@@ -131,7 +131,7 @@
             // 
             // listBoxListaSaida
             // 
-            this.listBoxListaSaida.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.listBoxListaSaida.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.listBoxListaSaida.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxListaSaida.FormattingEnabled = true;
             this.listBoxListaSaida.ItemHeight = 21;
@@ -144,7 +144,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkOrchid;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(771, 512);
             this.Controls.Add(this.listBoxListaSaida);
             this.Controls.Add(this.listBoxListaEntrada);
@@ -158,7 +159,9 @@
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmListaCarros";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmListaCarros";
+            this.Load += new System.EventHandler(this.FrmListaCarros_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -12,12 +12,19 @@ namespace desafio_atos
 {
     public partial class FrCadastroUsuarios : Form
     {
+        /// <summary>
+        /// lista de entrada de veiculos
+        /// </summary>
         List<Veiculo> listaEntrada = new List<Veiculo>();
         public FrCadastroUsuarios()
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// data do formulário
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrCadastroUsuarios_Load(object sender, EventArgs e)
         {
             lbDataEntrada.Text = DateTime.Now.ToString("dd / MM / yyyy");
@@ -28,7 +35,13 @@ namespace desafio_atos
             FrmListaCarros verifica = new FrmListaCarros();
             verifica.ShowDialog();
         }
-
+        /// <summary>
+        ///  ler o arquivo e verifica se tem espaço na garagem,
+        /// se a placa é igual a 7 digitos e se o veiculo já está na garagem,
+        /// se estiver manda um aviso senão cadastra a nova placa.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonCadatrarEntrada_Click(object sender, EventArgs e)
         {
             Persistencia.lerArquivoEntrada(listaEntrada);
@@ -57,12 +70,20 @@ namespace desafio_atos
             MessageBox.Show("Veiculo cadastrado com sucesso!");
             tbPlacaEntrada.Clear();
         }
-
+        /// <summary>
+        /// limpa a textbox 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonLimparEntrada_Click(object sender, EventArgs e)
         {
             tbPlacaEntrada.Clear();
         }
-
+        /// <summary>
+        /// hora do formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void timerHoraEntrada_Tick(object sender, EventArgs e)
         {
             lbHoraEntrada.Text = DateTime.Now.ToString("HH:mm:ss");
