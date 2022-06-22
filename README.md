@@ -1,5 +1,5 @@
 ﻿
-## :red_car Sistema de garagem GARAGEPLACE
+## Sistema de garagem GARAGEPLACE
 
 Espero que gostem deste sistema :D
 
@@ -13,9 +13,9 @@ fazer um sistema de garagem que usasse arquivos e listas para simular o
 banco de dados para aplicações futuras.
 
 
-##:video_camera: Vídeo do GARAGEPLACE
+## :video_camera: Vídeo do GARAGEPLACE
 
-Aqui um breve vídeo de como funciona o sistema.
+Aqui um breve gif de como funciona o sistema.
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/96269299/174955211-72c51cdf-ad16-463d-91e4-5c7ba1187d64.gif)
 
