@@ -36,7 +36,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btSalvarSaida = new System.Windows.Forms.Button();
             this.btirListaCarros = new System.Windows.Forms.Button();
-            this.btLimparSaida = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,7 +49,7 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBox1.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(163, 121);
+            this.textBox1.Location = new System.Drawing.Point(163, 119);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 31);
             this.textBox1.TabIndex = 3;
@@ -59,7 +58,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 121);
+            this.label1.Location = new System.Drawing.Point(8, 119);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 30);
             this.label1.TabIndex = 3;
@@ -69,7 +68,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Display", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(213, -1);
+            this.label4.Location = new System.Drawing.Point(212, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(323, 35);
             this.label4.TabIndex = 6;
@@ -88,7 +87,7 @@
             this.btSalvarSaida.BackColor = System.Drawing.Color.Moccasin;
             this.btSalvarSaida.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSalvarSaida.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btSalvarSaida.Location = new System.Drawing.Point(27, 432);
+            this.btSalvarSaida.Location = new System.Drawing.Point(17, 432);
             this.btSalvarSaida.Name = "btSalvarSaida";
             this.btSalvarSaida.Size = new System.Drawing.Size(149, 68);
             this.btSalvarSaida.TabIndex = 10;
@@ -101,26 +100,13 @@
             this.btirListaCarros.BackColor = System.Drawing.Color.Moccasin;
             this.btirListaCarros.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btirListaCarros.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btirListaCarros.Location = new System.Drawing.Point(557, 432);
+            this.btirListaCarros.Location = new System.Drawing.Point(260, 432);
             this.btirListaCarros.Name = "btirListaCarros";
             this.btirListaCarros.Size = new System.Drawing.Size(149, 68);
             this.btirListaCarros.TabIndex = 11;
             this.btirListaCarros.Text = "Ir para a lista de carros";
             this.btirListaCarros.UseVisualStyleBackColor = false;
             this.btirListaCarros.Click += new System.EventHandler(this.btirListaCarros_Click);
-            // 
-            // btLimparSaida
-            // 
-            this.btLimparSaida.BackColor = System.Drawing.Color.Moccasin;
-            this.btLimparSaida.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLimparSaida.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btLimparSaida.Location = new System.Drawing.Point(292, 432);
-            this.btLimparSaida.Name = "btLimparSaida";
-            this.btLimparSaida.Size = new System.Drawing.Size(149, 68);
-            this.btLimparSaida.TabIndex = 12;
-            this.btLimparSaida.Text = "Limpar\r\n";
-            this.btLimparSaida.UseVisualStyleBackColor = false;
-            this.btLimparSaida.Click += new System.EventHandler(this.btLimparSaida_Click);
             // 
             // label6
             // 
@@ -191,8 +177,7 @@
             // 
             // frmSaidaUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(771, 512);
@@ -202,7 +187,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.btLimparSaida);
             this.Controls.Add(this.btirListaCarros);
             this.Controls.Add(this.btSalvarSaida);
             this.Controls.Add(this.label5);
@@ -227,7 +211,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btSalvarSaida;
         private System.Windows.Forms.Button btirListaCarros;
-        private System.Windows.Forms.Button btLimparSaida;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;

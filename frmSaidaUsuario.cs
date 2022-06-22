@@ -19,10 +19,6 @@ namespace desafio_atos
             InitializeComponent();
         }
 
-        private void btLimparSaida_Click(object sender, EventArgs e)
-        {
-            textBox1.Clear();
-        }
 
         private void btSalvarSaida_Click(object sender, EventArgs e)
         {
@@ -48,7 +44,7 @@ namespace desafio_atos
             {
                 MessageBox.Show("Veiculo não encontrado.\n Digite novamente.");
                 textBox1.Clear();
-                textBox1.Clear();
+               
             }
         }
 
@@ -72,5 +68,7 @@ namespace desafio_atos
             FrmListaCarros verifica = new FrmListaCarros();
             verifica.ShowDialog();
         }
+
+       
     }
 }

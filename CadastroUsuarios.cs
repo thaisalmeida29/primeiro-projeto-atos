@@ -12,14 +12,11 @@ namespace desafio_atos
 {
     public partial class FrCadastroUsuarios : Form
     {
-        /// <summary>
-        /// lista de entrada de veiculos
-        /// </summary>
-        List<Veiculo> listaEntrada = new List<Veiculo>();
         public FrCadastroUsuarios()
         {
             InitializeComponent();
         }
+
         /// <summary>
         /// data do formulário
         /// </summary>
@@ -44,41 +41,36 @@ namespace desafio_atos
         /// <param name="e"></param>
         private void buttonCadatrarEntrada_Click(object sender, EventArgs e)
         {
+            string placaEntrada = tbPlacaEntrada.Text;
+            tbPlacaEntrada.Clear();
+            var listaEntrada = new List<Veiculo>();
             Persistencia.lerArquivoEntrada(listaEntrada);
-            if (listaEntrada.Count >= 50)
-            {
-                MessageBox.Show("Garagem lotada.");
-                return;
-            }
 
-            if (tbPlacaEntrada.Text.Length != 7)
+            if (placaEntrada.Length != 7)
             {
                 MessageBox.Show("Por favor, informar a placa com 7 caracteres." +
                     "\nSomente letras e números");
                 return;
             }
 
-            if (Veiculo.localizado(tbPlacaEntrada.Text, listaEntrada) != -27)
+            if (listaEntrada.Count >= 50)
+            {
+                MessageBox.Show("Garagem lotada.");
+                return;
+            }
+            
+            if (Veiculo.localizado(placaEntrada, listaEntrada) != -27)
             {
                 MessageBox.Show("Veiculo já está na Garagem.\nPlaca repetida.", "Erro de digitação");
                 return;
             }
             var dataCorrente = DateTime.Now;
-            var veiculo = new Veiculo(tbPlacaEntrada.Text, dataCorrente.ToString("dd/MM/yyyy"), dataCorrente.ToString("HH:mm"));
+            var veiculo = new Veiculo(placaEntrada, dataCorrente.ToString("dd/MM/yyyy"), dataCorrente.ToString("HH:mm"));
             listaEntrada.Add(veiculo);
             Persistencia.gravarNoArquivoEntrada(listaEntrada);
             MessageBox.Show("Veiculo cadastrado com sucesso!");
-            tbPlacaEntrada.Clear();
         }
-        /// <summary>
-        /// limpa a textbox 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void buttonLimparEntrada_Click(object sender, EventArgs e)
-        {
-            tbPlacaEntrada.Clear();
-        }
+    
         /// <summary>
         /// hora do formulario
         /// </summary>
@@ -87,11 +79,6 @@ namespace desafio_atos
         private void timerHoraEntrada_Tick(object sender, EventArgs e)
         {
             lbHoraEntrada.Text = DateTime.Now.ToString("HH:mm:ss");
-        }
-
-        private void lbDataEntrada_Click(object sender, EventArgs e)
-        {
-
-        }
+        }   
     }
 }

@@ -34,7 +34,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tbPlacaEntrada = new System.Windows.Forms.TextBox();
             this.buttonCadatrarEntrada = new System.Windows.Forms.Button();
-            this.buttonLimparEntrada = new System.Windows.Forms.Button();
             this.buttonVoltarHome = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.lbDataEntrada = new System.Windows.Forms.Label();
@@ -62,7 +61,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(6, 129);
+            this.label2.Location = new System.Drawing.Point(6, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(149, 30);
             this.label2.TabIndex = 2;
@@ -71,7 +70,7 @@
             // tbPlacaEntrada
             // 
             this.tbPlacaEntrada.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tbPlacaEntrada.Location = new System.Drawing.Point(176, 129);
+            this.tbPlacaEntrada.Location = new System.Drawing.Point(161, 112);
             this.tbPlacaEntrada.Name = "tbPlacaEntrada";
             this.tbPlacaEntrada.Size = new System.Drawing.Size(132, 31);
             this.tbPlacaEntrada.TabIndex = 3;
@@ -81,7 +80,7 @@
             this.buttonCadatrarEntrada.BackColor = System.Drawing.Color.Moccasin;
             this.buttonCadatrarEntrada.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCadatrarEntrada.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonCadatrarEntrada.Location = new System.Drawing.Point(35, 432);
+            this.buttonCadatrarEntrada.Location = new System.Drawing.Point(12, 432);
             this.buttonCadatrarEntrada.Name = "buttonCadatrarEntrada";
             this.buttonCadatrarEntrada.Size = new System.Drawing.Size(149, 68);
             this.buttonCadatrarEntrada.TabIndex = 9;
@@ -89,25 +88,12 @@
             this.buttonCadatrarEntrada.UseVisualStyleBackColor = false;
             this.buttonCadatrarEntrada.Click += new System.EventHandler(this.buttonCadatrarEntrada_Click);
             // 
-            // buttonLimparEntrada
-            // 
-            this.buttonLimparEntrada.BackColor = System.Drawing.Color.Moccasin;
-            this.buttonLimparEntrada.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLimparEntrada.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonLimparEntrada.Location = new System.Drawing.Point(287, 432);
-            this.buttonLimparEntrada.Name = "buttonLimparEntrada";
-            this.buttonLimparEntrada.Size = new System.Drawing.Size(149, 68);
-            this.buttonLimparEntrada.TabIndex = 10;
-            this.buttonLimparEntrada.Text = "Limpar";
-            this.buttonLimparEntrada.UseVisualStyleBackColor = false;
-            this.buttonLimparEntrada.Click += new System.EventHandler(this.buttonLimparEntrada_Click);
-            // 
             // buttonVoltarHome
             // 
             this.buttonVoltarHome.BackColor = System.Drawing.Color.Moccasin;
             this.buttonVoltarHome.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVoltarHome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonVoltarHome.Location = new System.Drawing.Point(555, 432);
+            this.buttonVoltarHome.Location = new System.Drawing.Point(249, 432);
             this.buttonVoltarHome.Name = "buttonVoltarHome";
             this.buttonVoltarHome.Size = new System.Drawing.Size(149, 68);
             this.buttonVoltarHome.TabIndex = 11;
@@ -132,7 +118,6 @@
             this.lbDataEntrada.Size = new System.Drawing.Size(46, 21);
             this.lbDataEntrada.TabIndex = 13;
             this.lbDataEntrada.Text = "Data";
-            this.lbDataEntrada.Click += new System.EventHandler(this.lbDataEntrada_Click);
             // 
             // lbHoraEntrada
             // 
@@ -174,7 +159,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(488, 151);
+            this.label6.Location = new System.Drawing.Point(506, 149);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(133, 60);
             this.label6.TabIndex = 17;
@@ -184,7 +169,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(488, 245);
+            this.label7.Location = new System.Drawing.Point(506, 243);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(236, 60);
             this.label7.TabIndex = 18;
@@ -192,8 +177,7 @@
             // 
             // FrCadastroUsuarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(771, 512);
@@ -206,7 +190,6 @@
             this.Controls.Add(this.lbDataEntrada);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.buttonVoltarHome);
-            this.Controls.Add(this.buttonLimparEntrada);
             this.Controls.Add(this.buttonCadatrarEntrada);
             this.Controls.Add(this.tbPlacaEntrada);
             this.Controls.Add(this.label2);
@@ -230,7 +213,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbPlacaEntrada;
         private System.Windows.Forms.Button buttonCadatrarEntrada;
-        private System.Windows.Forms.Button buttonLimparEntrada;
         private System.Windows.Forms.Button buttonVoltarHome;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lbDataEntrada;

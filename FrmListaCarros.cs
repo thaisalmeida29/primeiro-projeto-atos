@@ -30,7 +30,7 @@ namespace desafio_atos
             Persistencia.lerArquivoSaida(listaVeiculoSaida);
             foreach (Veiculo veiculo in listaVeiculoSaida)
             {
-                listBoxListaSaida.Items.Add($"{veiculo.Placa} - {veiculo.TempoPermanencia} Minuto(s) - R$ {veiculo.ValorCobrado}  {Environment.NewLine}");
+                tbListaSaida.AppendText($"{veiculo.Placa} - {veiculo.TempoPermanencia} Minuto(s) - R$ {veiculo.ValorCobrado}  {Environment.NewLine}");
             }
         }
         /// <summary>
@@ -44,7 +44,7 @@ namespace desafio_atos
             foreach (Veiculo veiculo in listaVeiculoEntrada)
             {
                 contador++;
-                listBoxListaEntrada.Items.Add(contador + " - " + veiculo.Placa + " - " + veiculo.DataEntrada + " - " + veiculo.HoraEntrada + Environment.NewLine);
+                tbListaEntrada.AppendText(contador + " - " + veiculo.Placa + " - " + veiculo.DataEntrada + " - " + veiculo.HoraEntrada + Environment.NewLine);
             }
         }
 
@@ -67,7 +67,7 @@ namespace desafio_atos
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        
+
         private void btApagarListaEntrada_Click(object sender, EventArgs e)
         {
             DialogResult resposta;
@@ -76,7 +76,7 @@ namespace desafio_atos
             {
                 List<Veiculo> listaEntradaVazia = new List<Veiculo>();
                 Persistencia.gravarNoArquivoEntrada(listaEntradaVazia);
-                listBoxListaEntrada.Items.Clear();
+                tbListaEntrada.Clear();
             }
             else
             {
@@ -97,7 +97,7 @@ namespace desafio_atos
             {
                 List<Veiculo> listaVaziaSaida = new List<Veiculo>();
                 Persistencia.gravarNoArquivoSaida(listaVaziaSaida);
-                listBoxListaSaida.Items.Clear();
+                tbListaSaida.Clear();
             }
             else
             {

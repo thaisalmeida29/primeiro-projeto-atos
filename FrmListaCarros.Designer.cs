@@ -36,8 +36,8 @@
             this.buttonFecharLista = new System.Windows.Forms.Button();
             this.btApagarListaEntrada = new System.Windows.Forms.Button();
             this.btApagarListaSaida = new System.Windows.Forms.Button();
-            this.listBoxListaEntrada = new System.Windows.Forms.ListBox();
-            this.listBoxListaSaida = new System.Windows.Forms.ListBox();
+            this.tbListaEntrada = new System.Windows.Forms.TextBox();
+            this.tbListaSaida = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -97,7 +97,7 @@
             this.btApagarListaEntrada.BackColor = System.Drawing.Color.Moccasin;
             this.btApagarListaEntrada.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btApagarListaEntrada.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btApagarListaEntrada.Location = new System.Drawing.Point(294, 427);
+            this.btApagarListaEntrada.Location = new System.Drawing.Point(294, 316);
             this.btApagarListaEntrada.Name = "btApagarListaEntrada";
             this.btApagarListaEntrada.Size = new System.Drawing.Size(175, 73);
             this.btApagarListaEntrada.TabIndex = 15;
@@ -110,7 +110,7 @@
             this.btApagarListaSaida.BackColor = System.Drawing.Color.Moccasin;
             this.btApagarListaSaida.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btApagarListaSaida.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btApagarListaSaida.Location = new System.Drawing.Point(294, 326);
+            this.btApagarListaSaida.Location = new System.Drawing.Point(294, 415);
             this.btApagarListaSaida.Name = "btApagarListaSaida";
             this.btApagarListaSaida.Size = new System.Drawing.Size(175, 75);
             this.btApagarListaSaida.TabIndex = 16;
@@ -118,27 +118,29 @@
             this.btApagarListaSaida.UseVisualStyleBackColor = false;
             this.btApagarListaSaida.Click += new System.EventHandler(this.btApagarListaSaida_Click);
             // 
-            // listBoxListaEntrada
+            // tbListaEntrada
             // 
-            this.listBoxListaEntrada.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.listBoxListaEntrada.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxListaEntrada.FormattingEnabled = true;
-            this.listBoxListaEntrada.ItemHeight = 21;
-            this.listBoxListaEntrada.Location = new System.Drawing.Point(5, 133);
-            this.listBoxListaEntrada.Name = "listBoxListaEntrada";
-            this.listBoxListaEntrada.Size = new System.Drawing.Size(283, 361);
-            this.listBoxListaEntrada.TabIndex = 17;
+            this.tbListaEntrada.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.tbListaEntrada.Enabled = false;
+            this.tbListaEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbListaEntrada.Location = new System.Drawing.Point(12, 139);
+            this.tbListaEntrada.Multiline = true;
+            this.tbListaEntrada.Name = "tbListaEntrada";
+            this.tbListaEntrada.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbListaEntrada.Size = new System.Drawing.Size(276, 361);
+            this.tbListaEntrada.TabIndex = 19;
             // 
-            // listBoxListaSaida
+            // tbListaSaida
             // 
-            this.listBoxListaSaida.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.listBoxListaSaida.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxListaSaida.FormattingEnabled = true;
-            this.listBoxListaSaida.ItemHeight = 21;
-            this.listBoxListaSaida.Location = new System.Drawing.Point(475, 139);
-            this.listBoxListaSaida.Name = "listBoxListaSaida";
-            this.listBoxListaSaida.Size = new System.Drawing.Size(284, 361);
-            this.listBoxListaSaida.TabIndex = 18;
+            this.tbListaSaida.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.tbListaSaida.Enabled = false;
+            this.tbListaSaida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbListaSaida.Location = new System.Drawing.Point(475, 139);
+            this.tbListaSaida.Multiline = true;
+            this.tbListaSaida.Name = "tbListaSaida";
+            this.tbListaSaida.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbListaSaida.Size = new System.Drawing.Size(284, 361);
+            this.tbListaSaida.TabIndex = 20;
             // 
             // FrmListaCarros
             // 
@@ -147,8 +149,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(771, 512);
-            this.Controls.Add(this.listBoxListaSaida);
-            this.Controls.Add(this.listBoxListaEntrada);
+            this.Controls.Add(this.tbListaSaida);
+            this.Controls.Add(this.tbListaEntrada);
             this.Controls.Add(this.btApagarListaSaida);
             this.Controls.Add(this.btApagarListaEntrada);
             this.Controls.Add(this.buttonFecharLista);
@@ -175,7 +177,7 @@
         private System.Windows.Forms.Button buttonFecharLista;
         private System.Windows.Forms.Button btApagarListaEntrada;
         private System.Windows.Forms.Button btApagarListaSaida;
-        private System.Windows.Forms.ListBox listBoxListaEntrada;
-        private System.Windows.Forms.ListBox listBoxListaSaida;
+        private System.Windows.Forms.TextBox tbListaEntrada;
+        private System.Windows.Forms.TextBox tbListaSaida;
     }
 }

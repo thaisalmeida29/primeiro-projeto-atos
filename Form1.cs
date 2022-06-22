@@ -70,7 +70,7 @@ namespace desafio_atos
         private void Form1_Load(object sender, EventArgs e)
         {
             lbData.Text = DateTime.Now.ToString("dd/MM/yyyy");
-            
+
         }
 
         private void lbData_Click(object sender, EventArgs e)
@@ -109,6 +109,7 @@ namespace desafio_atos
         /// <param name="e"></param>
         private void buttonSair_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("GARAGEPLACE AGRADECE SUA CONFIANÇA!! \n VOLTE SEMPRE!");
             Application.Exit();
         }
         /// <summary>
